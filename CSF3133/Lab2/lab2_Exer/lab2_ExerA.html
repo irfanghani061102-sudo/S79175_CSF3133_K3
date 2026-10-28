@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAREER ANAK TERENGGANU</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CAREER ANAK TERENGGANU</h1>
+        <p>Explore Your Future Career ANAK TERENGGANU!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Tentang Acara</a> |
+        <a href="#schedule">Jadual</a> |
+        <a href="#register">Pendaftaran</a>
+    </nav>
+
+    <hr>
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>Date: 2 November 2026</p>
+        <p>Venue: DEWAN SULTAN MIZAN UMT</p>
+        <p>event ini untuk pelajar umt asal terengganu mencari career.</p>
+
+        <article>
+            <h3>Resume Workshop</h3>
+            <p>Belajar untuk menulis resume yang baik.</p>
+        </article>
+
+        <article>
+            <h3>Interview Tips</h3>
+            <p>Belajar bagaimana untuk bersiap sedia untuk temu jodoh.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    
+    <section id="schedule">
+        <h2>JADUAL PROGRAM</h2>
+         <table border="1">
+            <tr>
+                <th>MASA</th>
+                <th>AKTIVITI</th>
+                <th>TEMPAT</th>
+                <th>PENYELARAS</th>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td>DAFTAR</td>
+                <td>DSM</td>
+                <td>Committee</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Upacara Pembukaan</td>
+                <td>DSM</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Resume Workshop</td>
+                <td rowspan="2">Room A</td>
+                <td>Speaker A</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Interview Tips</td>
+                <td>Speaker B</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td colspan="3">Rehat solat & makan</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Career Talk</td>
+                <td>DSM</td>
+                <td>Speaker C</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Upacara penutupan program</td>
+                <td>DSM</td>
+                <td>Committee</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <section id="register">
+        <h2>Borang Pendaftaran(sila isi)</h2>
+
+        <form action="register.html" method="post">
+
+            <label for="name">Nama penuh anda:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="matric">Nombor Matrik:</label>
+            <input type="text" id="matric" name="matric" required>
+            <br><br>
+
+            <label for="email">Email awak:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Tahun pengajian -->
+            <p>Tahun pengajian:</p>
+            <input type="radio" id="y1" name="tahun" value="1">
+            <label for="y1">Tahun 1</label>
+
+            <input type="radio" id="y2" name="tahun" value="2">
+            <label for="y2">Tahun 2</label>
+
+            <input type="radio" id="y3" name="tahun" value="3">
+            <label for="y3">Tahun 3</label>
+
+            <input type="radio" id="y4" name="tahun" value="4">
+            <label for="y4">Tahun 4</label>
+
+            <!-- Session Selection -->
+            <p>sesi pemilihan:</p>
+            <input type="checkbox" id="s1" name="session" value="resume">
+            <label for="s1">Resume Workshop</label>
+            <br>
+
+            <input type="checkbox" id="s2" name="session" value="interview">
+            <label for="s2">Interview Tips</label>
+            <br>
+
+            <input type="checkbox" id="s3" name="session" value="career">
+            <label for="s3">Career Talk</label>
+            <br><br>
+
+            <!-- Programme -->
+            <label for="programme">Programme:</label>
+            <select id="programme" name="programme">
+                <option value="se">Software Engineering</option>
+                <option value="cs">Computer Science</option>
+                <option value="mi">Maritime Informatics</option>
+                <option value="math">Mathematics</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>Organised by irfan dan kawan ii</p>
+        <p>&copy; CAREER PROGRAM FOR ANAK TERENGGANU</p>
+    </footer>
+
+</body>
+</html>
