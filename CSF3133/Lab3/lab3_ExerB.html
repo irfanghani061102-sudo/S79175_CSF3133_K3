@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+<!-- Error 1 (Line 1): Missing html in DOCTYPE declaration -->
+<!-- Error 2 (Line 2): Incorrect language code -->
+<!-- Error 3 (Line 9): Incorrect closing order of h1 and span -->
+<!-- Error 4 (Line 11): Used span instead of div for content -->
+<!-- Error 5 (Line 14): Incorrect total calculation -->
+<!-- Error 6 (Line 15): Missing required attribute -->
+<!-- Error 7 (Line 18): Email field missing required attribute -->
+<!-- Error 8 (Line 22): Incorrect datalist ID -->
+<!-- Error 9 (Line 23): Datalist ID did not match input list -->
+<!-- Error 10 (Line 32): Incorrect slider minimum and maximum values -->
+<!-- Error 11 (Line 33): Total output needs JavaScript calculation -->
+<!-- Error 12 (Line 38): Incorrect copyright entity -->
+<!-- Error 13 (Line 41): Incorrect closing tag order -->
+
+<div id="header">
+    <h1>FST<span>Cinema</span></h1>
+</div>
+
+<div id="content">
+
+    <h2>Book Your Tickets</h2>
+
+    <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+    <form action="booking.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required autofocus>
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter phone number" required>
+        <br>
+
+        <label for="date">Show date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+        <label for="time">Show time:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+
+        <label for="movie">Movie:</label>
+        <input type="text" id="movie" name="movie" list="movies" required>
+        <br>
+
+        <!-- Movie suggestions -->
+        <datalist id="movies">
+            <option value="Space Rangers">
+            <option value="Kampung Comedy">
+            <option value="The Ocean Mystery">
+        </datalist>
+
+        <label for="adult">Adult tickets:</label>
+        <input type="number" id="adult" name="adult" value="0" min="0">
+        <br>
+
+        <label for="child">Child tickets:</label>
+        <input type="number" id="child" name="child" value="0" min="0">
+        <br>
+
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5">
+        <br>
+
+        <!-- Total ticket calculation -->
+        Total tickets:
+        <output id="total" name="total">0</output>
+        <br>
+
+        <!-- Total price calculation -->
+        Total price: RM
+        <output id="price" name="price">0.00</output>
+        <br>
+
+        <input type="submit" value="Book Now">
+
+    </form>
+</div>
+
+<!-- Now Showing sidebar -->
+<div id="sidebar">
+    <h2>Now Showing</h2>
+
+    <p>
+        <strong>Space Rangers</strong>
+        <span>PG</span>
+        <a href="https://www.youtube.com/results?search_query=Space+Rangers+trailer">
+            Watch Trailer
+        </a>
+    </p>
+
+    <p>
+        <strong>Kampung Comedy</strong>
+        <span>PG</span>
+        <a href="https://www.youtube.com/results?search_query=Kampung+Comedy+trailer">
+            Watch Trailer
+        </a>
+    </p>
+
+    <p>
+        <strong>The Ocean Mystery</strong>
+        <span>PG-13</span>
+        <a href="https://www.youtube.com/results?search_query=Ocean+Mystery+trailer">
+            Watch Trailer
+        </a>
+    </p>
+</div>
+
+<!-- JavaScript for ticket calculation -->
+<script>
+    const adult = document.getElementById("adult");
+    const child = document.getElementById("child");
+    const total = document.getElementById("total");
+    const price = document.getElementById("price");
+
+    function calculateTotal() {
+        let adultTickets = Number(adult.value);
+        let childTickets = Number(child.value);
+
+        let totalTickets = adultTickets + childTickets;
+        let totalPrice = (adultTickets * 12) + (childTickets * 8);
+
+        total.value = totalTickets;
+        price.value = totalPrice.toFixed(2);
+    }
+
+    adult.addEventListener("input", calculateTotal);
+    child.addEventListener("input", calculateTotal);
+
+    calculateTotal();
+</script>
+
+<!-- Footer section -->
+<div id="footer">
+    <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday</p>
+    <p>&copy; 2026 CineKampus. All rights reserved.</p>
+</div>
+
+</body>
+</html>
