@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML5 Page Structure -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Terengganu</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: #0077b6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Visit Terengganu</h1>
+        <p>Discover the Beauty of the East Coast</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-container">
+
+            <!-- Destination 1 -->
+            <article class="card">
+                <h3>Pulau Redang</h3>
+                <p>Enjoy beautiful beaches, clear water and amazing marine life.</p>
+                <p>
+                    <span class="old-price">RM 299</span>
+                    <span class="price">RM 199</span>
+                </p>
+            </article>
+
+            <!-- Destination 2 -->
+            <article class="card">
+                <h3>Pulau Perhentian</h3>
+                <p>Explore stunning islands and enjoy exciting snorkeling activities.</p>
+                <p>
+                    <span class="old-price">RM 350</span>
+                    <span class="price">RM 250</span>
+                </p>
+            </article>
+
+            <!-- Destination 3 -->
+            <article class="card">
+                <h3>Pasar Payang</h3>
+                <p>Discover traditional crafts, local food and Terengganu culture.</p>
+                <p>
+                    <span class="old-price">RM 100</span>
+                    <span class="price">RM 70</span>
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Trip Seat Meter -->
+        <p class="center">
+            Trip Seats Filled:
+            <meter min="0" max="40" value="28">28 out of 40</meter>
+            28 / 40 Seats
+        </p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Explore Terengganu</h2>
+
+        <figure>
+            <video width="600" height="350" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption class="caption">
+                Experience the beautiful scenery of Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Interest Form Section -->
+    <section id="trip">
+        <h2>Join Our Trip!</h2>
+
+        <form class="trip-form">
+
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Field -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Traveller Type -->
+            <p>Traveller Type:</p>
+
+            <label>
+                <input type="radio" name="traveller" value="Student" required>
+                Student
+            </label>
+
+            <label>
+                <input type="radio" name="traveller" value="Staff">
+                Staff
+            </label>
+
+            <label>
+                <input type="radio" name="traveller" value="Public">
+                Public
+            </label>
+
+            <!-- Interests -->
+            <p>Interests:</p>
+
+            <label>
+                <input type="checkbox" name="interest" value="Islands">
+                Islands
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Food">
+                Food
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Culture">
+                Culture
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Nature">
+                Nature
+            </label>
+
+            <!-- Submit Button -->
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu Tourism Promotion</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visit.terengganu@example.com">
+                visit.terengganu@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>

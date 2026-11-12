@@ -1,0 +1,171 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FDF2E9;
+    margin: 0;
+    color: #333333;
+}
+
+/* Header Styling */
+header {
+    background-color: #6F4E37;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #4E342E;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+/* Link States: Correct Order */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Menu Section */
+#menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #D7CCC8;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Old Promotion Price */
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+/* Video Section */
+#video {
+    padding: 20px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Caption */
+figcaption {
+    font-style: italic;
+    color: #6F4E37;
+    margin-top: 10px;
+}
+
+/* Feedback Section */
+#feedback {
+    padding: 20px;
+}
+
+/* Feedback Form */
+.feedback-form {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #6F4E37;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Form Input Styling */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.feedback-form label {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Submit Button */
+.feedback-form input[type="submit"] {
+    background-color: #6F4E37;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #E67E22;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4E342E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    .item {
+        width: 90%;
+    }
+}

@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML5 Structure -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café IRFAN GHANI</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Heading with line above */
+        h1 {
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        /* Paragraph Styling */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Intro Section */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+
+        /* Highlight Prices */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Error List:
+    Error 1 (Line 7): HTML comment inside CSS changed to CSS comment.
+    Error 2 (Line 9): list-style-type: no changed to none.
+    Error 3 (Line 14-15): Link states reordered correctly.
+    Error 4 (Line 17): overlined changed to overline.
+    Error 5 (Line 18): Missing colon after color added.
+    Error 6 (Line 22): Missing dot in .highlight selector.
+    Error 7 (Line 34): href="menu" changed to href="#menu".
+    Error 8 (Line 54): type="mp4" changed to type="video/mp4".
+    Error 9: Added controls attribute to video.
+    Error 10: Added viewport meta tag.
+    Error 11: Repeated id="item" changed to class="item".
+    Error 12: Added feedback section and form.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>IRFAN GHANI e-Cafe</h1>
+        <p class="center">Welcome to our café!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <!-- Menu Item 1 -->
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+                Only <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <!-- Menu Item 2 -->
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.00</span>
+                Only <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video controls width="400">
+                <source src="IrfanCafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover the delicious food and drinks at IRFAN GHANI e-Cafe.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Visit Type -->
+            <p>Visit Type:</p>
+
+            <label>
+                <input type="radio" name="visit" value="Dine-in" required>
+                Dine-in
+            </label>
+
+            <label>
+                <input type="radio" name="visit" value="Take-away">
+                Take-away
+            </label>
+
+            <!-- Favourite Items -->
+            <p>Favourite Items:</p>
+
+            <label>
+                <input type="checkbox" name="favourite" value="Kopi Tarik">
+                Kopi Tarik
+            </label>
+
+            <label>
+                <input type="checkbox" name="favourite" value="Nasi Lemak">
+                Nasi Lemak
+            </label>
+
+            <label>
+                <input type="checkbox" name="favourite" value="Sandwich">
+                Sandwich
+            </label>
+
+            <!-- Submit Button -->
+            <br><br>
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 IRFAN GHANI e-Cafe</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@irfanghani.edu.my">
+                ecafe@irfanghani.edu.my
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
