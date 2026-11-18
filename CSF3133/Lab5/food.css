@@ -1,0 +1,150 @@
+
+
+/* General Styling */
+* {
+    box-sizing: border-box;margin:0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 1. Header with Background Image */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 2. Horizontal Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C2C2C;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* 3. Content Section and Text Formatting */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* 4. Inline CSS is in food.html */
+
+/* 5. Styled Table */
+#foodtable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: white;
+}
+
+#foodtable th,
+#foodtable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 13px;
+}
+
+#foodtable th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#foodtable tr:nth-child(even) {
+    background-color: #FDEBD0;
+}
+
+#foodtable tr:hover {
+    background-color: #F2F2F2;
+}
+
+#foodtable .price {
+    text-align: right;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    #foodtable th,
+    #foodtable td {
+        padding: 8px 5px;
+        font-size: 11px;
+    }
+}
