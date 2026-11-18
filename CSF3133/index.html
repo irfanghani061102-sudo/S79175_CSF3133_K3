@@ -3,13 +3,44 @@
 <html>
 <head>
     <title>CSF3133 Web Design</title>
+    <style>
+        /* CSS untuk menyusun tajuk di kiri dan gambar-gambar di kanan */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-right {
+            display: flex;
+            gap: 12px; /* Jarak antara gambar muka dan logo UMT */
+            align-items: center;
+        }
+        .profile-pic {
+            width: 120px;     /* Saiz lebar gambar */
+            height: 150px;    /* Saiz tinggi gambar */
+            object-fit: cover;/* Memastikan gambar tidak terpesong */
+            border-radius: 8px; /* Lengkung penjuru gambar */
+            border: 2px solid #ccc; /* Bingkai gambar */
+        }
+        .umt-logo {
+            width: 110px;     /* Anda boleh ubah saiz logo ikut kesesuaian */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>CSF3133 - Web Design</h1>
-    <h2>My Lab Exercises</h2>
-    <hr>
+    <div class="header-container">
+        <div>
+            <h1>CSF3133 - Web Design</h1>
+            <h2>My Lab Exercises</h2>
+        </div class="header-right">
+        <img src="myface.jpeg" alt="Muka Saya" class="profile-pic">
+            <!-- Gantikan 'umt_logo.png' dengan nama fail logo UMT anda -->
+            <img src="umt_logo.jpeg" alt="Logo UMT" class="umt-logo">
+    </div>
 
+    <hr>
     <h3>Lab 1</h3>
     <ul>
         <li><a href="Lab1/lab1.html">Lab 1</a></li>
@@ -40,6 +71,13 @@
         <li><a href="Lab4/Lab4_CSF3133_S79175.pdf">Lab 4 Report (PDF)</a></li>
         <li><a href="Lab4/lab4_ExerA.html">Exercise A</a></li>
         <li><a href="Lab4/lab4_ExerB.html">Exercise B</a></li>
+    </ul>
+
+    <h3>Lab 5</h3>
+    <ul>
+        <li><a href="Lab5/Lab5_CSF3133_S79175.pdf">Lab 5 Report (PDF)</a></li>
+        <li><a href="Lab5/food.html">Food Festival Page</a></li>
+        <li><a href="Lab5/shop.html">Campus Bookstore Page</a></li>
     </ul>
     <hr>
     <p>Prepared by: Muhammad Irfan Bin A Ghani(S79175)</p>
